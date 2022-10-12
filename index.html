@@ -5,68 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <style>
+        header {
+            background-color: #EBB28D;
+            height: 90px;
+            display:flex;
+            justify-content: left;
+        }
+        body {
+            margin: 0;
+        }
+        header {
+            position: relative;
+        }
+        img {
+            height: 90px;
+            width: 110px;
+        }
+        .title {
+            padding: 30px;
+            margin: left;
+        }
+        .topnav a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color:darkred;
+            font-size: 20px;
+            text-align: right;
+            list-style-type: none;
+            position:relative;
+            padding-left: 10px;
+            padding-right: 10px;
+        }               
+        .topnav a:hover {
+            background-color: azure;
+            color: black;
+        }
+        #navtype {
+            list-style-type: none;
+            float:right;
+        }
+        li {
+            display: inline;
+            background-color:bisque;
+            padding: 5px;
+            margin-top: 20px;
+            position: relative;         
+            top: 0;          
+        }
+        main {
+            background-color: #B5592D;
+            height: 700px;
+            padding-bottom: 150px;
+            overflow: hidden;
+        }
+        #books {
+            width: 12%;
+            height: 12%;
+            padding: 5px;
+            position: relative;
+        }
+         p {
+            text-decoration: none;
+        }
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:ghostwhite;
+            padding: 5px 10px 10px 5px;
+            font-size: 50px;
+        }
+        footer {
+            position: fixed;
+            background-color: #271D1A;
+            height: 150px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            clear: both;
+        }
+        #footlinks li {
+            list-style-type: none;
+        }
+        p.text1 {
+            color:blanchedalmond;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+        }
+        p.disclaimer {
+            font-size: 10px;
+            font-style: oblique;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+           }
+    </style>
 </head>
-<style>
-    header {
-        background-color: #EBB28D;
-        height: 90px;
-        display:flex;
-        justify-content: left;
-    }
-    body {
-        margin: 0;
-    }
-</style>
 <body>
     <header>
-        <style>
-            header {
-                position: relative;
-            }
-            img {
-                height: 90px;
-                width: 110px;
-            }
-            .title {
-                padding: 30px;
-                margin: left;
-            }
-        </style>
-            <img src="./assets/img/logo01.JPG">
-        <div class="title">Search for title
+        <img src="./assets/img/logo01.JPG">
+            <div class="title">Search for title
                 <input type="text" placeholder="Search..." name="search">
                 <button>submit</button>
-        </div>
+            </div>
         <div>
-            <style>
-                .topnav a {
-                    text-decoration: none;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color:darkred;
-                    font-size: 20px;
-                    text-align: right;
-                    list-style-type: none;
-                    position:relative;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }               
-                .topnav a:hover {
-                    background-color: azure;
-                    color: black;
-                }
-                #navtype {
-                    list-style-type: none;
-                    float:right;
-                }
-                li {
-                    display: inline;
-                    background-color:bisque;
-                    padding: 5px;
-                    margin-top: 20px;
-                    position: relative;         
-                    top: 0;          
-                }
-            </style>
+            
             <nav class="topnav">
                 <ul id="navtype">
                     <li><a href="index.html">Home</a></li>
@@ -81,29 +124,6 @@
     </header>
     <main>
         <div>
-            <style>
-                main {
-                    background-color: #B5592D;
-                    height: 700px;
-                    padding-bottom: 150px;
-                    overflow: hidden;
-                }
-                #books {
-                    width: 12%;
-                    height: 12%;
-                    padding: 5px;
-                    position: relative;
-                }
-                 p {
-                    text-decoration: none;
-                }
-                h2 {
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    color:ghostwhite;
-                    padding: 5px 10px 10px 5px;
-                    font-size: 50px;
-                }
-            </style>
             <h2>Bestsellers</h2>
                 <img class="books" id="books" src="./assets/img/Book 01.JPG">
                 <img class="books" id="books" src="./assets/img/Book 02.JPG">
@@ -113,50 +133,17 @@
                 <span><p class="clickmore" id="click"><a href="02Buy.html">Click for more</a></p></span>
         </div>
     </main>
-    <footer>
-        <style>
-            footer {
-                position: fixed;
-                background-color: #271D1A;
-                height: 150px;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 100%;
-                clear: both;
-            }
-            #footlinks li {
-                list-style-type: none;
-            }
-        </style>
-            <nav class="footer-links">
-                <ul id="footlinks">
-                    <li><a href="#">| Terms and Conditions |</a></li>
-                    <li><a href="#">| Private Policy |</a></li>
-                </ul>               
-            </nav> 
-        <div>
-        <style>
-            p.text1 {
-                color:blanchedalmond;
-                font-style: normal;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 15px;
-            }
-        </style>      
-        <p class="text1" name="copyright"> Copyright 2022 Tumbletech, Inc. All rights reserved.</p>
-        <br>
-        <style>
-            p.disclaimer {
-                font-size: 10px;
-                font-style: oblique;
-                color: whitesmoke;
-                font-family: Arial, Helvetica, sans-serif;
-               }
-        </style>
+    <footer>        
+        <nav class="footer-links">
+            <ul id="footlinks">
+                <li><a href="#">| Terms and Conditions |</a></li>
+                <li><a href="#">| Private Policy |</a></li>
+            </ul>               
+        </nav> 
+        <div>      
+            <p class="text1" name="copyright"> Copyright 2022 Tumbletech, Inc. All rights reserved.</p>
         </div>
-        <p class="disclaimer">Disclaimer: This website is for the partial fulfillment only of the Web Development course of Joven Moralejo in KodeGo and not intended for actual transactions.</p>
-        </style>
-        </footer>
-    </body>
+            <p class="disclaimer">Disclaimer: This website is for the partial fulfillment only of the Web Development course of Joven Moralejo in KodeGo and not intended for actual transactions.</p>
+    </footer>
+</body>
 </html>
