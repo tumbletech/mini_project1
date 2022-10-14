@@ -5,27 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
         header {
             background-color: #EBB28D;
             height: 90px;
             display:flex;
             justify-content: left;
-        }
+            position: relative;
+            }
         body {
             margin: 0;
-        }
-        header {
-            position: relative;
-        }
+            }
         img {
             height: 90px;
             width: 110px;
-        }
+            }
         .title {
             padding: 30px;
             margin: left;
-        }
+            }
         .topnav a {
             text-decoration: none;
             font-family: Arial, Helvetica, sans-serif;
@@ -34,46 +34,46 @@
             text-align: right;
             list-style-type: none;
             position:relative;
-            padding-left: 10px;
+            padding-left: 40px;
             padding-right: 10px;
-        }               
+            }               
         .topnav a:hover {
             background-color: azure;
             color: black;
-        }
+            }
         #navtype {
             list-style-type: none;
             float:right;
-        }
-        li {
+            }
+        .topnav li {
             display: inline;
             background-color:bisque;
             padding: 5px;
             margin-top: 20px;
             position: relative;         
             top: 0;          
-        }
+            }
         main {
             background-color: #B5592D;
             height: 700px;
             padding-bottom: 150px;
             overflow: hidden;
-        }
+            }
         #books {
             width: 12%;
             height: 12%;
             padding: 5px;
             position: relative;
-        }
-         p {
+            }
+        p {
             text-decoration: none;
-        }
+            }
         h2 {
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             color:ghostwhite;
             padding: 5px 10px 10px 5px;
             font-size: 50px;
-        }
+            }
         footer {
             position: fixed;
             background-color: #271D1A;
@@ -83,22 +83,37 @@
             right: 0;
             width: 100%;
             clear: both;
-        }
+            }
         #footlinks li {
             list-style-type: none;
-        }
+            text-decoration: none;
+            color:beige;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            }
         p.text1 {
             color:blanchedalmond;
             font-style: normal;
             font-family: 'Times New Roman', Times, serif;
             font-size: 15px;
-        }
+            display: flex;
+            justify-content: center;
+            }
         p.disclaimer {
             font-size: 10px;
             font-style: oblique;
             color: whitesmoke;
             font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
            }
+        #click {
+            font-family: Arial, Helvetica, sans-serif;
+            float: right;
+            padding-right: 400px;
+            padding-top: 225px;
+            }   
     </style>
 </head>
 <body>
@@ -109,8 +124,7 @@
                 <button>submit</button>
             </div>
         <div>
-            
-            <nav class="topnav">
+            <div class="topnav">
                 <ul id="navtype">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="01AboutUs.html">About Us</a></li>
@@ -119,7 +133,7 @@
                     <li><a href="04Trade.html">Trade</a></li>
                     <li><a href="05Contactus.html">Contact Us</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -134,16 +148,18 @@
         </div>
     </main>
     <footer>        
-        <nav class="footer-links">
+        <div class="footer-links">
             <ul id="footlinks">
                 <li><a href="#">| Terms and Conditions |</a></li>
                 <li><a href="#">| Private Policy |</a></li>
             </ul>               
-        </nav> 
+        </div> 
         <div>      
             <p class="text1" name="copyright"> Copyright 2022 Tumbletech, Inc. All rights reserved.</p>
         </div>
             <p class="disclaimer">Disclaimer: This website is for the partial fulfillment only of the Web Development course of Joven Moralejo in KodeGo and not intended for actual transactions.</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
