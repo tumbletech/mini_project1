@@ -5,69 +5,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        header {
+            background-color: #EBB28D;
+            height: 90px;
+            display:flex;
+            justify-content: left;
+        }
+        body {
+            margin: 0;
+        }
+        header {
+            position: relative;
+        }
+        img.logo { 
+            height: 90px;
+            width: 110px;
+        }
+        .title {
+            padding: 30px;
+            margin: left;
+        }
+        .topnav a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color:darkred;
+            font-size: 20px;
+            text-align: right;
+            list-style-type: none;
+            position:relative;
+            padding-left: 40px;
+            padding-right: 10px;
+            }
+        }               
+        .topnav a:hover {
+            background-color: azure;
+            color: black;
+        }
+        #navtype {
+            list-style-type: none;
+            float:right;
+        }
+        .topnav li {
+            display: inline;
+            background-color:bisque;
+            padding: 5px;
+            margin-top: 20px;
+            position: relative;         
+            top: 0;          
+        }
+        main {
+            background-color: #B5592D;
+            height: 500px;
+            padding-bottom: 100px;
+        }
+        h2 {
+            font-size: 30px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 100;
+            color:beige;
+            margin: 0;
+         }
+        p {
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: normal;
+            color:lavenderblush;   
+         }
+        #annotation {
+            text-indent: 5px;
+            margin-right: 300px;
+            margin-left: 50px;
+         }
+        img.extra {
+            width: 20%;
+            height: 20%;
+            padding: 15px;
+        }
+        footer {
+            position: fixed;
+            background-color: #271D1A;
+            height: 150px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            clear: both;
+        }
+        #footlinks li {
+            list-style-type: none;
+            text-decoration: none;
+            color:beige;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            }
+        p.text1 {
+            color:blanchedalmond;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            }
+        p.disclaimer {
+            font-size: 10px;
+            font-style: oblique;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+           }
+    </style>
 </head>
-<style>
-    header {
-        background-color: #EBB28D;
-        height: 90px;
-        display:flex;
-        justify-content: left;
-    }
-    body {
-        margin: 0;
-    }
-</style>
 <body>
-    <header>
-        <style>
-            header {
-                position: relative;
-            }
-            img {
-                height: 50px;
-                width: 70px;
-            }
-            .title {
-                padding: 30px;
-                margin: left;
-            }
-        </style>
+    <header> 
             <img src="./assets/img/logo01.JPG" class="logo">
         <div class="title">Search for title
                 <input type="text" placeholder="Search..." name="search">
                 <button>submit</button>
         </div>
         <div>
-            <style>
-                .topnav a {
-                    text-decoration: none;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color:darkred;
-                    font-size: 20px;
-                    text-align: right;
-                    list-style-type: none;
-                    position:relative;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }               
-                .topnav a:hover {
-                    background-color: azure;
-                    color: black;
-                }
-                #navtype {
-                    list-style-type: none;
-                    float:right;
-                }
-                li {
-                    display: inline;
-                    background-color:bisque;
-                    padding: 5px;
-                    margin-top: 20px;
-                    position: relative;         
-                    top: 0;          
-                }
-            </style>
-            <nav class="topnav">
+            <div class="topnav">
                 <ul id="navtype">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="01AboutUs.html">About Us</a></li>
@@ -76,106 +138,45 @@
                     <li><a href="04Trade.html">Trade</a></li>
                     <li><a href="05Contactus.html">Contact Us</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
-        <main>
-            <style>
-                main {
-                    background-color: #B5592D;
-                    height: 500px;
-                }
-            </style>      
-                <div>
-                    <style>
-                        h2 {
-                            font-size: 30px;
-                            font-family: "Roboto";
-                            font-style: normal;
-                            font-weight: 100;
-                            color:beige;
-                         }
-                        p {
-                            font-size: 15px;
-                            font-family: Arial, Helvetica, sans-serif;
-                            font-style: normal;
-                            color:lavenderblush;   
-                         }
-                         #annotation {
-                            text-indent: 5px;
-                            margin-right: 300px;
-                            margin-left: 50px;
-                         }
-                    </style>
-                    <h2>About Us</h2>
-                        <p id="annotation"> 
+        <main>      
+            <div>
+                <h2>About Us</h2>
+                    <p id="annotation"> 
                         We are a group of professionals whose advocacy is increasing literacy among Filipinos.
                         We do this by making peer-reviewed, high level books and other reading materials available
                         to as many Filipinos as we can.
-                        </p>
-                        <p id="annotation">
+                    </p>
+                    <p id="annotation">
                         We do this by exploiting the most powerful tool in the world now - <i>the internet.</i> 
-                        </p>
-                        <p id="annotation">
+                    </p>
+                    <p id="annotation">
                         Not only are we buying books to sell, but we are also trading books - for books too.
                         Interested? Please click the trade button to show us the cover of the book you want to trade
                         and give a short description about and we will get back to you.
-                        </p>
-                    <style>
-                        img {
-                            width: 25%;
-                            height: 25%;
-                        }
-                    </style>
-                        <img src="./assets/img/photo01.jpg">
-                        <img src="./assets/img/photo02.JPG">
-                        <img src="./assets/img/photo03.jpg">
-                </div>
+                    </p>
+                        <img src="./assets/img/photo01.jpg" class="extra">
+                        <img src="./assets/img/photo02.JPG" class="extra">
+                        <img src="./assets/img/photo03.jpg" class="extra">
+            </div>
         </main>
         <footer>
-            <style>
-                footer {
-                    position: fixed;
-                    background-color: #271D1A;
-                    height: 150px;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    width: 100%;
-                    clear: both;
-                }
-                #footlinks li {
-                    list-style-type: none;
-                }
-            </style>
-                <nav class="footer-links">
-                    <ul id="footlinks">
-                        <li><a href="#">| Terms and Conditions |</a></li>
-                        <li><a href="#">| Private Policy |</a></li>
-                    </ul>               
-                </nav> 
-            <div>
-            <style>
-                p.text1 {
-                    color:blanchedalmond;
-                    font-style: normal;
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: 15px;
-                }
-            </style>      
-            <p class="text1" name="copyright"> Copyright 2022 Tumbletech, Inc. All rights reserved.</p>
-            <br>
-            <style>
-                p.disclaimer {
-                    font-size: 10px;
-                    font-style: oblique;
-                    color: whitesmoke;
-                    font-family: Arial, Helvetica, sans-serif;
-                   }
-            </style>
+            <div class="footer-links">
+                <ul id="footlinks">
+                    <li><a href="#">| Terms and Conditions |</a></li>
+                    <li><a href="#">| Private Policy |</a></li>
+                </ul>               
+            </div> 
+            <div>      
+                 <p class="text1" name="copyright"> Copyright 2022 Tumbletech, Inc. All rights reserved.</p>
+                <br>
             </div>
             <p class="disclaimer">Disclaimer: This website is for the partial fulfillment only of the Web Development course of Joven Moralejo in KodeGo and not intended for actual transactions.</p>
             </style>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     </body>
 </html>
