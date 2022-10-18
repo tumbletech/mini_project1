@@ -5,71 +5,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buy</title>
+    <link href="./assets/img/wrap.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        header {
+            background-color: #EBB28D;
+            height: 90px;
+            display:flex;
+            justify-content: left;
+            }
+        body {
+            margin: 0;
+            }
+        header {
+            position:sticky;
+            }
+        img {
+            height: 90px;
+            width: 110px;
+            }
+        .title {
+            padding: 30px;
+            margin: left;
+            }
+        .topnav a {
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color:darkred;
+            font-size: 20px;
+            text-align: right;
+            list-style-type: none;
+            position:relative;
+            padding-left: 10px;
+            padding-right: 10px;
+            }               
+        .topnav a:hover {
+            background-color: azure;
+            color: black;
+            }
+        #navtype {
+            list-style-type: none;
+            float:right;
+            }
+        .topnav li {
+            display: inline;
+            background-color:bisque;
+            padding: 5px;
+            margin-top: 20px;
+            position: relative;         
+            top: 0;          
+            }
+        main {
+            background-color: #B5592D;
+            height: 500px;
+            padding-bottom: 150px;
+            overflow: scroll;
+            }
+        #books {
+            width: 12%;
+            height: 12%;
+            padding: 5px;
+            position: relative;
+            }
+        p {
+            text-decoration: none;
+            color:antiquewhite;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            margin-left: 40px;
+            }
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:ghostwhite;
+            padding: 5px 10px 10px 5px;
+            font-size: 50px;
+            margin:0;
+            }
+        h3 a {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:aqua;
+            padding: 5px 10px 10px 5px;
+            font-size: 25px;
+            text-decoration: none;
+            }
+        img.local01 {
+            width: 10%;
+            height: 10%;
+            padding: 10px
+            }
+        img.self-help {
+            width: 10%;
+            height: 10%;
+            padding: 10px
+            }
+        img.politics {
+            width: 10%;
+            height: 10%;
+            padding: 10px
+            }
+        img.science {
+            width: 10%;
+            height: 10%;
+            padding: 10px
+            }
+        img.children {
+            width: 10%;
+            height: 10%;
+            padding: 10px
+            }
+        img.highschool {
+            width: 10%;
+            height: 10%;
+            padding: 10px
+            }
+        img.college {
+            width: 10%;
+            height: 10%;
+            padding: 10px
+            }
+        footer {
+            position: fixed;
+            background-color: #271D1A;
+            height: 120px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            clear: both;
+            margin: 0;
+            }
+        #footlinks li {
+            list-style-type: none;
+            text-decoration: none;
+            color:beige;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            }
+        p.text1 {
+            color:blanchedalmond;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 15px;
+            display: flex;
+            justify-content: center;
+            }
+        p.disclaimer {
+            font-size: 10px;
+            font-style: oblique;
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+           }
+        .title {
+            display: inline-block;
+            padding-left: 150px;
+        }
+    </style>
 </head>
-<style>
-    header {
-        background-color: #EBB28D;
-        height: 90px;
-        display:flex;
-        justify-content: left;
-    }
-    body {
-        margin: 0;
-    }
-</style>
 <body>
     <header>
-        <style>
-            header {
-                position: relative;
-            }
-            img {
-                height: 90px;
-                width: 110px;
-            }
-            .title {
-                padding: 30px;
-                margin: left;
-            }
-        </style>
-            <img src="./assets/img/logo01.JPG">
+        <img src="./assets/img/logo01.JPG">
         <div class="title">Search for title
-                <input type="text" placeholder="Search..." name="search">
+            <input type="text" placeholder="Search..." name="search">
                 <button>submit</button>
         </div>
         <div>
-            <style>
-                .topnav a {
-                    text-decoration: none;
-                    font-family: Arial, Helvetica, sans-serif;
-                    color:darkred;
-                    font-size: 20px;
-                    text-align: right;
-                    list-style-type: none;
-                    position:relative;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                }               
-                .topnav a:hover {
-                    background-color: azure;
-                    color: black;
-                }
-                #navtype {
-                    list-style-type: none;
-                    float:right;
-                }
-                li {
-                    display: inline;
-                    background-color:bisque;
-                    padding: 5px;
-                    margin-top: 20px;
-                    position: relative;         
-                    top: 0;          
-                }
-            </style>
-            <nav class="topnav">
+            <div class="topnav">
                 <ul id="navtype">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="01AboutUs.html">About Us</a></li>
@@ -78,183 +182,76 @@
                     <li><a href="04Trade.html">Trade</a></li>
                     <li><a href="05Contactus.html">Contact Us</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
-    <main>
-        <style>
-                main {
-                    background-color: #B5592D;
-                    height: 700px;
-                    padding-bottom: 150px;
-                    overflow: scroll;
-                }
-                #books {
-                    width: 12%;
-                    height: 12%;
-                    padding: 5px;
-                    position: relative;
-                }
-                 p {
-                    text-decoration: none;
-                    color:antiquewhite;
-                    font-family: 'Times New Roman', Times, serif;
-                    font-size: 15px;
-                    margin-left: 40px;
-                }
-                h2 {
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    color:ghostwhite;
-                    padding: 5px 10px 10px 5px;
-                    font-size: 50px;
-                }
-                h3 a {
-                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                    color: beige;
-                    padding: 5px 10px 10px 5px;
-                    font-size: 25px;
-                    text-decoration: none;
-                }
-            </style>           
-                <h2>Buy</h2>  
-                    <p>Please choose from any of the categories below:</p>
-                    <div>
-                        <h3><a href="02aBuy.html">Local/National Interest</a></h3>
-                        <style>
-                            img.local01 {
-                                width: 10%;
-                                height: 10%;
-                                padding: 10px
-                                }
-                        </style>
-                            <img src="./assets/img/Book 07.JPG" class="local01">
-                    </div>
-                    <div>
-                        <h3><a href="02bBuy.html">Self-help</a></h3>
-                        <style>
-                            img.self-help {
-                                width: 10%;
-                                height: 10%;
-                                padding: 10px
-                                }
-                        </style>
-                            <img src="./assets/img/Book 01.JPG" class="self-help">
-                            <img src="./assets/img/Book 02.JPG" class="self-help">
-                            <img src="./assets/img/Book 03.JPG" class="self-help">
-                    </div>
-                    <div>
-                        <h3><a href="02cBuy.html">Science</a></h3>
-                        <style>
-                            img.science {
-                                width: 10%;
-                                height: 10%;
-                                padding: 10px
-                                }
-                        </style>
-                            <img src="./assets/img/Book 04.JPG" class="science">
-                            <img src="./assets/img/Book 06.JPG" class="science">
-                    </div>
-                    <div>
-                        <h3><a href="02dBuy.html">International and Local Politics</a></h3>
-                        <style>
-                            img.politics {
-                                width: 10%;
-                                height: 10%;
-                                padding: 10px
-                                }
-                        </style>
-                            <img src="./assets/img/Book 05.JPG" class="politics">
-                            <img src="./assets/img/Book 08.JPG" class="politics">
-                            <img src="./assets/img/Book 09.JPG" class="politics">
-                    </div>
-                    <div>
-                        <h3><a href="02eBuy.html">Children's</a></h3>
-                        <style>
-                            img.children {
-                                width: 10%;
-                                height: 10%;
-                                padding: 10px
-                                }
-                        </style>
-                            <img src="./assets/img/Book 10.JPG" class="children">
-                            <img src="./assets/img/Book 11.JPG" class="children">
-                            <img src="./assets/img/Book 12.JPG" class="children">
-                            <img src="./assets/img/Book 13.JPG" class="children">
-                    </div>
-                    <div>
-                        <h3><a href="02fBuy.html">High School</a></h3>
-                        <style>
-                            img.highschool {
-                                width: 10%;
-                                height: 10%;
-                                padding: 10px
-                                }
-                        </style>
-                            <img src="./assets/img/Book 14.JPG" class="highschool">
-                            <img src="./assets/img/Book 15.JPG" class="highschool">
-                            <img src="./assets/img/Book 16.JPG" class="highschool">
-                    </div>
-                    <div>
-                        <h3><a href="02gBuy.html">College</a></h3>
-                        <style>
-                            img.college {
-                                width: 10%;
-                                height: 10%;
-                                padding: 10px
-                                }
-                        </style>
-                            <img src="./assets/img/Book 17.JPG" class="college">
-                            <img src="./assets/img/Book 18.JPG" class="college">
-                            <img src="./assets/img/Book 19.JPG" class="college">
-                            <img src="./assets/img/Book 20.JPG" class="college">
-                            <img src="./assets/img/Book 21.JPG" class="college">
-                    </div>
-            
+    <main>           
+        <h2>Buy</h2>
+        <hr>  
+            <p>Please choose from any of the categories below:</p>
+                <div>
+                    <h3><a href="02aBuy.html">Local/National Interest</a></h3>
+                        <img src="./assets/img/Book 07.JPG" class="local01">
+                        <p class="morebooks">more books to come.</p>
+                </div>
+                <div>
+                    <h3><a href="02bBuy.html">Self-help</a></h3>
+                        <img src="./assets/img/Book 01.JPG" class="self-help">
+                        <img src="./assets/img/Book 02.JPG" class="self-help">
+                        <img src="./assets/img/Book 03.JPG" class="self-help">
+                        <p>more books to come.</p>
+                </div>
+                <div>
+                    <h3><a href="02cBuy.html">Science</a></h3>
+                        <img src="./assets/img/Book 04.JPG" class="science">
+                        <img src="./assets/img/Book 06.JPG" class="science">
+                        <p>more books to come.</p>
+                </div>
+                <div>
+                    <h3><a href="02dBuy.html">International and Local Politics</a></h3>
+                        <img src="./assets/img/Book 05.JPG" class="politics">
+                        <img src="./assets/img/Book 08.JPG" class="politics">
+                        <img src="./assets/img/Book 09.JPG" class="politics">
+                        <p>more books to come.</p>
+                </div>
+                <div>
+                    <h3><a href="02eBuy.html">Children's</a></h3>
+                        <img src="./assets/img/Book 10.JPG" class="children">
+                        <img src="./assets/img/Book 11.JPG" class="children">
+                        <img src="./assets/img/Book 12.JPG" class="children">
+                        <img src="./assets/img/Book 13.JPG" class="children">
+                        <p>more books to come.</p>
+                </div>
+                <div>
+                    <h3><a href="02fBuy.html">High School</a></h3>
+                        <img src="./assets/img/Book 14.JPG" class="highschool">
+                        <img src="./assets/img/Book 15.JPG" class="highschool">
+                        <img src="./assets/img/Book 16.JPG" class="highschool">
+                        <p>more books to come.</p>
+                </div>
+                <div>
+                    <h3><a href="02gBuy.html">College</a></h3>
+                        <img src="./assets/img/Book 17.JPG" class="college">
+                        <img src="./assets/img/Book 18.JPG" class="college">
+                        <img src="./assets/img/Book 19.JPG" class="college">
+                        <img src="./assets/img/Book 20.JPG" class="college">
+                        <img src="./assets/img/Book 21.JPG" class="college">
+                        <p>more books to come.</p>
+                </div> 
     </main>
     <footer>
-        <style>
-            footer {
-                position: fixed;
-                background-color: #271D1A;
-                height: 150px;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                width: 100%;
-                clear: both;
-            }
-            #footlinks li {
-                list-style-type: none;
-            }
-        </style>
-            <nav class="footer-links">
-                <ul id="footlinks">
-                    <li><a href="#">| Terms and Conditions |</a></li>
-                    <li><a href="#">| Private Policy |</a></li>
-                </ul>               
-            </nav> 
-        <div>
-        <style>
-            p.text1 {
-                color:blanchedalmond;
-                font-style: normal;
-                font-family: 'Times New Roman', Times, serif;
-                font-size: 15px;
-            }
-        </style>      
-        <p class="text1" name="copyright"> Copyright 2022 Tumbletech, Inc. All rights reserved.</p>
-        <br>
-        <style>
-            p.disclaimer {
-                font-size: 10px;
-                font-style: oblique;
-                color: whitesmoke;
-                font-family: Arial, Helvetica, sans-serif;
-               }
-        </style>
+        <div class="footer-links">
+            <ul id="footlinks">
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Private Policy</a></li>
+            </ul>               
+        </div> 
+        <div>      
+            <p class="text1" name="copyright"> Copyright 2022 Tumbletech, Inc. All rights reserved.</p>
         </div>
         <p class="disclaimer">Disclaimer: This website is for the partial fulfillment only of the Web Development course of Joven Moralejo in KodeGo and not intended for actual transactions.</p>
-        </style>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
