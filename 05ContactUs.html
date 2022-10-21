@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy|Science</title>
+    <title>Sell</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <style>
@@ -13,13 +13,12 @@
             height: 90px;
             display:flex;
             justify-content: left;
-            position:sticky;
-            width: 100%;
+            position: relative;
             }
         body {
             margin: 0;
             }
-        img.logo {
+        img {
             height: 90px;
             width: 110px;
             }
@@ -55,51 +54,23 @@
             top: 0;          
             }
         main {
-            display: flex;
-            height:700px;
             background-color: #B5592D;
+            height: 1000px;
+            padding-bottom: 150px;
+            overflow: hidden;
+            }
+        .mb-3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color:bisque;
         }
-        .card {
-            display: block;
-            margin-top: 50px;
-            margin-left: 0px;
-            background-image: linear-gradient(gray, whitesmoke);
-            height: 500px;
-            width: 350px;
-            border-radius: 10px;
+        .d-grid button{
+            width: 100px;
+            margin-left: 1000px;
         }
-        .p.card-text {
-            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            color:aqua;
-            font-size:15px;
-        }
-        h2 {
-            margin-top: 0;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color:#f8f8ff;
-            font-size: 25px;
-            margin-left: 0px;
-            }
-        h5 {
-            font-family:Arial, Helvetica, sans-serif;
-            color:blue;
-            font-size: 20px;
-            }
-        img.img-fluid {
-            height: 250px;
-            width: 170px;
-            margin-left: 70px;
-            }
-        p.clickformore {
-            color:lavenderblush;
-            margin-top: 450px;
-            font-family:'Times New Roman', Times, serif;
-            font-size: 20px;
-            }
         footer {
             position: fixed;
             background-color: #271D1A;
-            height: 150px;
+            height: 120px;
             bottom: 0;
             left: 0;
             right: 0;
@@ -130,19 +101,36 @@
             display: flex;
             justify-content: center;
            }
+        #click {
+            font-family: Arial, Helvetica, sans-serif;
+            float: right;
+            padding-right: 400px;
+            padding-top: 225px;
+            color:red;
+            }
+        hr {
+            color:beige;
+            }
+        .title {
+            display: inline-block;
+            padding-left: 150px;
+        }
+        @media (min-width: 1025px) {
+        }
+        .h-custom {
+            height: 100vh !important;
+        }   
     </style>
 </head>
 <body>
     <header>
-        <img class="logo" src="./assets/img/logo01.JPG">
+        <img src="./assets/img/logo01.JPG">
             <div class="title">Search for title
                 <input type="text" placeholder="Search..." name="search">
                 <button>submit</button>
             </div>
         <div>
-            <style>
-            </style>
-            <nav class="topnav">
+            <div class="topnav">
                 <ul id="navtype">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="01AboutUs.html">About Us</a></li>
@@ -151,58 +139,31 @@
                     <li><a href="04Trade.html">Trade</a></li>
                     <li><a href="05Contactus.html">Contact Us</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
     <main>
-        <h2>Buy | Science</h2>
-            <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="./assets/img/Book 04.JPG" class="img-fluid"/>
-                    <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                    </a>
+        <div class="container py-4">
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label class="form-label" for="name">Name</label>
+                    <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title"><strong>An Inconvenient Truth</strong></h5>
-                    <p class="card-text">Author: Al Gore</p>
-                    <p class="card-text">Year: 2006</p>
-                    <p class="card-text">Price: Php 1,200.00</p>
-                    <a href="./06paycenter07.html" class="btn btn-primary">Buy</a>
+                <div class="mb-3">
+                    <label class="form-label" for="emailAddress">Email Address</label>
+                    <input class="form-control" id="emailAddress" type="text" placeholder="Email Address" data-sb-validations="required, email" />
                 </div>
-            </div>
-            <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="./assets/img/Book 06.JPG" class="img-fluid"/>
-                    <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                    </a>
+                <div class="mb-3">
+                    <label class="form-label" for="message">Message</label>
+                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height:10rem" data-sb-validations="required, email"></textarea>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title"><strong>A Brief History of Time</strong></h5>
-                    <p class="card-text">Author: Stephen Hawking</p>
-                    <p class="card-text">Year: 1988</p>
-                    <p class="card-text">Price: Php 1,000.00</p>
-                    <a href="./06paycenter08.html" class="btn btn-primary">Buy</a>
+                <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
                 </div>
-            </div>
-            <div class="card">
-                <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                    <img src="./assets/img/Book 24.JPG" class="img-fluid"/>
-                    <a href="#!">
-                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                    </a>
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title"><strong>The Red Limit</strong></h5>
-                    <p class="card-text">Author: Timothy Ferris</p>
-                    <p class="card-text">Year: 1977</p>
-                    <p class="card-text">Price: Php 1,050.00</p>
-                    <a href="./06paycenter09.html" class="btn btn-primary">Buy</a>
-                </div>
-            </div>
-            <p class="clickformore">More books to come.</p>
-    <footer>
+            </form>
+        </div>
+    </main>
+    <footer>        
         <div class="footer-links">
             <ul id="footlinks">
                 <li><a href="#">Terms and Conditions</a></li>
@@ -210,11 +171,10 @@
             </ul>               
         </div> 
         <div>      
-            <p class="text1" name="copyright"> Copyright 2022 Tumbletech, Inc. All rights reserved.</p>
-                <br>
+            <p class="text1" name="copyright">Copyright &copy 2022 Tumbletech, Inc. All rights reserved.</p>
         </div>
             <p class="disclaimer">Disclaimer: This website is for the partial fulfillment only of the Web Development course of Joven Moralejo in KodeGo and not intended for actual transactions.</p>
-    </footer>
+    </footer>        
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
